@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../styles/NavBarStyles.css";
+import { Link, NavLink } from "react-router-dom";
+
 export const NavBar = () => {
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
@@ -10,9 +12,10 @@ export const NavBar = () => {
     <>
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <NavLink to="/" className="nav-link">
             Inicio
-          </a>
+          </NavLink>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -27,19 +30,19 @@ export const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
+                <NavLink to="/proyectos" className="nav-link">
                   Proyectos
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link " href="#">
-                  Sobre mi
-                </a>
+                <NavLink to="/educacion" className="nav-link">
+                  Educacion
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Educación
-                </a>
+                <NavLink to="/sobremi" className="nav-link">
+                  SobreMi
+                </NavLink>
               </li>
             </ul>
           </div>
