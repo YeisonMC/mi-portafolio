@@ -106,6 +106,7 @@ export const Home = () => {
             </div>
           </div>
         </nav>
+        <h1>hasta aca estamos bien xd</h1>
       </section>
       {/* <div data-aos="zoom-out-right">
         <img src={bannerImage} alt="Banner" className="banner-image secon" />
