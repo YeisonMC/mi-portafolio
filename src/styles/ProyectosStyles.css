@@ -1,0 +1,10 @@
+hr {
+  opacity: 100;
+  width: 10%;
+}
+
+.herramientas {
+  padding: 0.6em;
+  background-color: rgb(255, 194, 154);
+  border-radius: 0.3em;
+}

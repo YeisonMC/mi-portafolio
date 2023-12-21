@@ -7,13 +7,13 @@ import "../styles/TipoGrafias.css";
 
 export const Home = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1900 });
   }, []);
 
   return (
     <>
-      <section className="container">
-        <div className="banner-container" data-aos="fade-up">
+      <section className="container" data-aos="fade-up">
+        <div className="banner-container">
           <img src={bannerImage} alt="Banner" className="banner-image" />
           <div className="banner-content">
             <h1>Mi Portafolio</h1>
@@ -24,8 +24,13 @@ export const Home = () => {
               Error porro iusto quia quam, amet laborum praesentium architecto
               numquam dolorem similique?
             </p>
-            <a href="#proyectos" className="btn btn-primary">
-              Ver Proyectos
+            <a
+              href="/CV%20-%20YEISSEN%20-%20DESARROLLADOR.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Descargar CV
             </a>
           </div>
         </div>
@@ -106,6 +111,7 @@ export const Home = () => {
             </div>
           </div>
         </nav>
+        <h1>hasta aca estamos bien xd</h1>
       </section>
       {/* <div data-aos="zoom-out-right">
         <img src={bannerImage} alt="Banner" className="banner-image secon" />
