@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500&display=swap");
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+/* 
+Para títulos y encabezados:
+Roboto: Una fuente sans-serif moderna y versátil que es adecuada para una variedad de propósitos.
+Open Sans: Otra fuente sans-serif moderna que es fácil de leer y tiene un buen contraste.
+Montserrat: Una fuente sans-serif geométrica que es elegante y moderna.
+
+Para cuerpo de texto:
+Lato: Una fuente sans-serif clásica que es legible y fácil de leer en pantalla.
+Roboto Slab: Una fuente sans-serif con un peso más pesado que es adecuada para cuerpo de texto.
+Libre Baskerville: Una fuente serif clásica que es elegante y refinada.
+
+Para fuentes decorativas:
+Pacifico: Una fuente script con un toque caligráfico.
+Dancing Script: Otra fuente script con un estilo único.
+Great Vibes: Una fuente display con un estilo retro. */
+
+.nav-link {
+  /* color: black;
+    font-size: 18px; */
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  transition: 0.2s;
+}
+
+.titulos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.7em;
+}
+
+.sub-titulos {
+  font-family: "Open Sans", sans-serif;
+}
