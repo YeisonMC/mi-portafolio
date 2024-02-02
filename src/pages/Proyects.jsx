@@ -25,10 +25,10 @@ export const Proyects = () => {
               <ContentCard>
                 <div className="font-bold text-xl mb-2">Autocine Arnolds</div>
                 <p className="text-gray-700 text-base">
-                  Proyecto de Autocine, desarrollado con Java, Spring Boot y
-                  MySQL, destacando CRUD/MVC, autenticación Spring Security,
-                  validaciones, manejo de errores y utilización de APIs para una
-                  experiencia completa y segura.
+                  Proyecto de Autocine, desarrollado con Java, Spring Boot,
+                  MySQL y Bootstrap, destacando CRUD/MVC, autenticación Spring
+                  Security, validaciones, manejo de errores y utilización de
+                  APIs para una experiencia completa y segura.
                 </p>
               </ContentCard>
               <EndCard>

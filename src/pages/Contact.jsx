@@ -9,20 +9,6 @@ import { useContactForm } from "../hooks/useContactForm";
 export const Contact = () => {
   const { formData, handleChange, resetForm } = useContactForm();
 
-  // const [formData, setFormData] = useState({
-  //   nombre: "",
-  //   correo: "",
-  //   mensaje: "",
-  // });
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData((prevData) => ({
-  //     ...prevData,
-  //     [name]: value,
-  //   }));
-  // };
-
   const sendEmail = async (e) => {
     e.preventDefault();
 
@@ -38,11 +24,6 @@ export const Contact = () => {
       toast.success("¡Correo enviado con éxito!");
 
       resetForm();
-      // setFormData({
-      //   nombre: "",
-      //   correo: "",
-      //   mensaje: "",
-      // });
     } catch {
       toast.error("Hubo un error al enviar el correo.");
     }
@@ -50,8 +31,7 @@ export const Contact = () => {
 
   return (
     <>
-      <br />
-      <nav className="">
+      <nav className="" id="contacto">
         <div className="w-full max-w-md m-auto" onSubmit={sendEmail}>
           <form className="bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-4 ">
             <h2 className="titulos text-center">Contactame</h2>

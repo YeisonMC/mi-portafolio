@@ -14,7 +14,7 @@ import Reacticon from "../assets/images/frontend/react.svg";
 export const Skills = () => {
   return (
     <>
-      <nav className="">
+      <nav className="" id="habilidades">
         <h2 className="titulos">Habilidades</h2>
         <hr className="border-t-2 border-green-500  w-16" />
         <br />
