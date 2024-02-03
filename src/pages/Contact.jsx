@@ -66,6 +66,7 @@ export const Contact = () => {
                 maxLength={150}
                 value={formData.mensaje}
                 onChange={handleChange}
+                required
               ></textarea>
             </div>
             <div className="flex items-center justify-between">
