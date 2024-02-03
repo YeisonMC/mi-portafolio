@@ -19,7 +19,7 @@ export const Home = () => {
             />
           </div>
           <div className="max-w-2xl">
-            <h3 className="text-4xl titulos">Yeissen Macalupu</h3>
+            <h3 className="text-4xl titulos">Yeissen Macalupu Marchan</h3>
             <p className="text-1xl mt-3 sub-titulos">
               Soy Frontend Developer apasionado por crear experiencias web
               sorprendentes he interfaces intuitivas y atractivas. Explora mi
