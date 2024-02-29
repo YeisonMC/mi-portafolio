@@ -31,7 +31,7 @@ export const Contact = () => {
 
   return (
     <>
-      <nav className="" id="contacto">
+      <nav className="pb-10" id="contacto">
         <div className="w-full max-w-md m-auto" onSubmit={sendEmail}>
           <form className="bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-4 ">
             <h2 className="titulos text-center">Contactame</h2>

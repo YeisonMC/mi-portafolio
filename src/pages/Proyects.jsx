@@ -10,10 +10,10 @@ import { EndCard } from "../components/iu/card/EndCard";
 export const Proyects = () => {
   return (
     <>
-      <nav className="mt-96" id="proyectos">
+      <nav className="pt-4 pb-20" id="proyectos">
         <div className="">
-          <h2 className="titulos">Proyectos</h2>
-          <hr className="border-t-2 border-green-500 w-16" />
+          <h2 className="text-3xl titulos font-bold text-white">Proyectos</h2>
+          <hr className="border-t-4 border-[#FDCA65] w-16" />
           <br />
           <div className="flex flex-wrap gap-7 md:justify-start justify-center">
             <Card>
@@ -24,7 +24,7 @@ export const Proyects = () => {
               />
               <ContentCard>
                 <div className="font-bold text-xl mb-2">Autocine Arnolds</div>
-                <p className="text-gray-700 text-base">
+                <p className="text-base">
                   Proyecto de Autocine, desarrollado con Java, Spring Boot,
                   MySQL y Bootstrap, destacando CRUD/MVC, autenticación Spring
                   Security, validaciones, manejo de errores y utilización de
@@ -53,7 +53,7 @@ export const Proyects = () => {
                 <div className="font-bold text-xl mb-2">
                   Sistema de Registro de Clientes
                 </div>
-                <p className="text-gray-700 text-base">
+                <p className="text-base">
                   Sistema creado con Node.js (backend), React (frontend) y
                   SQLite (base de datos). Permite registrar clientes, visualizar
                   hasta 10 registros en la página de inicio con paginación,
