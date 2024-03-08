@@ -1,9 +1,6 @@
 import React from "react";
 import "../assets/styles/TipoGrafias.css";
-import { UilLinkedin, UilGithub } from "@iconscout/react-unicons";
 import { ATargetBlank } from "../components/iu/ATargetBlank";
-
-import Linkedin from "../assets/images/home/linkedin.svg";
 
 export const Home = () => {
   return (
@@ -19,7 +16,7 @@ export const Home = () => {
               // rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 size-[100px] mb-5
             />
           </div>
-          <div className=" ">
+          <div>
             <h3 className="titulos text-white text-3xl md:text-4xl lg:text-5xl font-bold">
               Yeissen Macalupu Marchan
             </h3>
@@ -38,7 +35,7 @@ export const Home = () => {
             <div className="flex items-center gap-4 mt-5 max-md:justify-center">
               <ATargetBlank href="https://www.linkedin.com/in/yeissen-beckam-macalupu-marchan/">
                 <svg
-                  class="size-5 md:size-6"
+                  className="size-5 md:size-6"
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="xMidYMid"
                   viewBox="0 0 256 256"
