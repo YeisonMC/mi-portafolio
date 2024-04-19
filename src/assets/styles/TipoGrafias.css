@@ -51,3 +51,47 @@ Great Vibes: Una fuente display con un estilo retro. */
   font-weight: 800;
   font-style: normal;
 }
+
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+}
+
+/* .yeissen span {
+  display: inline-block;
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transform: translateY(10px);
+} */
+
+@keyframes entrada {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.yeison {
+  animation: entrada 1.4s ease;
+}
+
+.rounded-prueb {
+  border-radius: 27% 63% 27% 54% / 63% 63% 35% 35%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(5%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 5s linear infinite;
+}

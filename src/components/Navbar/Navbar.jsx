@@ -1,41 +1,78 @@
 import React, { useState } from "react";
+import LogoNameHead from "../../assets/images/head/logo-name-header.svg";
+import { Link, useLocation } from "react-router-dom";
 import "../../assets/styles/navbar2.css";
 import "../../assets/styles/TipoGrafias.css";
-import LogoNameHead from "../../assets/images/head/logo-name-header.svg";
+
+const NAV_LINK_CLASS = "hover:text-[#A9725C] raleway";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  console.log(location);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="px-4 shadow-[rgba(0,_0,_0,_0.10)_0px_2px_10px]">
-      <div className=" flex justify-between items-center max-w-screen-2xl w-full mx-auto py-5">
-        <div className="hidden md:flex md:items-center md:gap-6">
-          <a href="#features" className="hover:text-[#A9725C] raleway">
+    <nav className="shadow-[rgba(0,_0,_0,_0.10)_0px_2px_10px]">
+      <div className="flex justify-between items-center  py-5 max-w-screen-2xl w-11/12 mx-auto ">
+        <div className="animation-hover hidden md:flex md:items-center md:gap-6">
+          <Link
+            to="/"
+            className={`${NAV_LINK_CLASS} ${
+              location.pathname === "/" ? "active" : ""
+            }`}
+          >
             Inicio
-          </a>
-          <a href="#pricing" className="hover:text-[#A9725C] raleway">
+          </Link>
+          {/* <Link
+            to="/projects"
+            className={`hover:text-[#A9725C] raleway ${
+              location.pathname === "/projects" ? "active" : ""
+            }`}
+          >
             Proyectos
-          </a>
-          <a href="#about" className="hover:text-[#A9725C] raleway">
+          </Link> */}
+          <Link
+            to="/projects"
+            className={`${NAV_LINK_CLASS} ${
+              location.pathname === "/projects" ? "active" : ""
+            }`}
+          >
+            Proyectos
+          </Link>
+          <Link
+            to="/skills"
+            className={`${NAV_LINK_CLASS} ${
+              location.pathname === "/skills" ? "active" : ""
+            }`}
+          >
             Habilidades
-          </a>
-          <a href="#about" className="hover:text-[#A9725C] raleway">
-            Contacto
-          </a>
+          </Link>
+          <Link
+            to="/about"
+            className={`${NAV_LINK_CLASS} ${
+              location.pathname === "/about" ? "active" : ""
+            }`}
+          >
+            Sobre mi
+          </Link>
         </div>
 
         <img src={LogoNameHead} alt="" className="w-[80px]" />
 
-        <div className="flex items-center gap-3">
-          <a className="hover:-translate-y-1 transition duration-300" href="#">
+        <div className="flex items-center gap-3 max-md:hidden">
+          <a
+            className="hover:-translate-y-1 transition duration-300"
+            href="https://github.com/YeisonMC"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.6em"
-              height="1.6m"
+              height="1.6em"
               viewBox="0 0 256 250"
             >
               <path
@@ -44,7 +81,11 @@ const Navbar = () => {
               />
             </svg>
           </a>
-          <a className="hover:-translate-y-1 transition duration-300" href="#">
+          <a
+            className="hover:-translate-y-1 transition duration-300"
+            href="https://www.linkedin.com/in/yeissen-beckam-macalupu-marchan/"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.6em"
@@ -61,8 +102,11 @@ const Navbar = () => {
               </g>
             </svg>
           </a>
-
-          <a className="hover:-translate-y-1 transition duration-300" href="#">
+          <a
+            className="hover:-translate-y-1 transition duration-300"
+            href="#"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2em"
@@ -80,7 +124,11 @@ const Navbar = () => {
             </svg>
           </a>
 
-          <a className="hover:-translate-y-1 transition duration-300" href="">
+          <a
+            className="hover:-translate-y-1 transition duration-300"
+            href="https://www.instagram.com/yeissen.dev/"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.4em"
@@ -113,10 +161,10 @@ const Navbar = () => {
                     gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#fd5" />
-                    <stop offset=".1" stop-color="#fd5" />
-                    <stop offset=".5" stop-color="#ff543e" />
-                    <stop offset="1" stop-color="#c837ab" />
+                    <stop stopColor="#fd5" />
+                    <stop offset=".1" stopColor="#fd5" />
+                    <stop offset=".5" stopColor="#ff543e" />
+                    <stop offset="1" stopColor="#c837ab" />
                   </radialGradient>
                   <radialGradient
                     id="skillIconsInstagram1"
@@ -126,9 +174,9 @@ const Navbar = () => {
                     gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#3771c8" />
-                    <stop offset=".128" stop-color="#3771c8" />
-                    <stop offset="1" stop-color="#60f" stop-opacity="0" />
+                    <stop stopColor="#3771c8" />
+                    <stop offset=".128" stopColor="#3771c8" />
+                    <stop offset="1" stopColor="#60f" stopOpacity="0" />
                   </radialGradient>
                 </defs>
               </g>
@@ -152,42 +200,46 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* //TODO: PARA CELULAR */}
       <div
-        className={`md:hidden  overflow-hidden transition-all duration-700 ease-in-out ${
+        className={` md:hidden  overflow-hidden transition-all duration-700 ease-in-out ${
           isOpen ? "max-h-[300px]" : "max-h-0"
         } `}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 inline-block">
-          <a
-            href="#features"
-            className="text-gray-300 hover:bg-[#e54246] hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+        <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col">
+          <Link
+            to="/"
+            className={` ${NAV_LINK_CLASS} ${
+              location.pathname === "/" ? "active" : ""
+            }`}
           >
-            Mujer
-          </a>
-          <a
-            href="#pricing"
-            className="text-gray-300 hover:bg-[#e54246] hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            Inicio
+          </Link>
+
+          <Link
+            to="/projects"
+            className={`${NAV_LINK_CLASS} ${
+              location.pathname === "/projects" ? "active" : ""
+            }`}
           >
-            Precios
-          </a>
-          <a
-            href="#about"
-            className="text-gray-300 hover:bg-[#e54246] hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            Proyectos
+          </Link>
+          <Link
+            to="/skills"
+            className={`${NAV_LINK_CLASS} ${
+              location.pathname === "/skills" ? "active" : ""
+            }`}
           >
-            Acerca de
-          </a>
-          <a
-            href="#login"
-            className="text-gray-300 hover:bg-[#e54246] hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            Habilidades
+          </Link>
+          <Link
+            to="/about"
+            className={`${NAV_LINK_CLASS} ${
+              location.pathname === "/about" ? "active" : ""
+            }`}
           >
-            Iniciar sesión
-          </a>
-          <a
-            href="#signup"
-            className="text-gray-300 hover:bg-[#e54246] hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Registrarse
-          </a>
+            Sobre mi
+          </Link>
         </div>
       </div>
     </nav>
