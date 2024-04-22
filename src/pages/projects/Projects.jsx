@@ -1,16 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+//TODO: ICONOS SVG
 import ProjectInkato from "../../assets/images/projects/inkato.svg";
 import ProjectModaMarket from "../../assets/images/projects/moda-market.svg";
 import ProjectCentroGZA from "../../assets/images/projects/centro-gza.svg";
+import Reacticon from "../../assets/images/frontend/react.svg";
+import Vite from "../../assets/images/frontend/vite.svg";
+import Tailwind from "../../assets/images/frontend/tailwind.svg";
+import Html from "../../assets/images/frontend/html5.svg";
+import Css from "../../assets/images/frontend/css3.svg";
+
+//TODO: COMPONENTES
+import { SkillsSvg } from "../../components/iu/SkillsSvg";
+import InkatoProject from "./components/left/InkatoProject";
 
 const Projects = () => {
+  const [expand, setExpand] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setExpand(true);
+    }, 400);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <>
       <nav className="mt-8" data-aos="fade-up" data-aos-duration="2300">
         <h1 className="text-[#A9725C] font-bold text-6xl merriweather-bold py-4 text-center">
           Proyectos
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6">
           <div className="shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]">
             <img src={ProjectInkato} alt="ProjectInkato" />
             <div className="p-4">
@@ -41,6 +62,14 @@ const Projects = () => {
               <p>Proyecto desarrollado con React</p>
             </div>
           </div>
+        </div> */}
+        <InkatoProject />
+        <div className="relative w-full h-[6px] ">
+          <hr
+            className={`absolute top-0 h-full bg-[#A9725C] transition-all duration-1000 ${
+              expand ? "left-0 w-full" : "left-1/2 w-0"
+            }`}
+          />
         </div>
       </nav>
     </>
