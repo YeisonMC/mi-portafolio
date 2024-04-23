@@ -1,35 +1,13 @@
-import React, { useEffect } from "react";
-// import "../../assets/styles/TipoGrafias.css";
-import LogoNameHead from "../../assets/images/head/logo-name-header.svg";
-
+import React from "react";
+import HrSeparator from "../../components/animated/HrSeparator";
+import Experience from "./components/Experience";
 const Home = () => {
-  // useEffect(() => {
-  //   const h1Text = document.querySelector(".yeissen");
-  //   const text = h1Text.textContent;
-  //   h1Text.textContent = "";
-
-  //   for (let i = 0; i < text.length; i++) {
-  //     const span = document.createElement("span");
-  //     span.textContent = text[i];
-  //     h1Text.appendChild(span);
-  //   }
-
-  //   const letrasBienvenido = document.querySelectorAll("span");
-  //   letrasBienvenido.forEach((letra, index) => {
-  //     setTimeout(() => {
-  //       letra.style.opacity = "1";
-  //       letra.style.transform = "translateY(0)";
-  //     }, 100 * index);
-  //   });
-  // }, []);
-
   return (
     <>
-      {/* <img src={LogoNameHead} alt="" className="w-[80px]" /> */}
       {/* //TODO: h-screen max-lg:h-auto */}
       <nav className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 max-lg:gap-10 yeison mt-20 max-lg:mt-4">
         <div className="m-auto">
-          <h1 className="text-[#A9725C] font-bold text-6xl merriweather-bold ">
+          <h1 className="text-[#A9725C] font-bold text-6xl merriweather-bold">
             Hola, soy
           </h1>
           <h1 className="text-[#A9725C] font-bold text-6xl merriweather-bold py-4">
@@ -116,6 +94,10 @@ const Home = () => {
           </div>
         </div>
       </nav>
+      <div className="my-10">
+        <HrSeparator />
+      </div>
+      <Experience />
     </>
   );
 };

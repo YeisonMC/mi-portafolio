@@ -1,18 +1,9 @@
+// TODO IMPORT LIBRERIAS REACT
 import React, { useState, useEffect } from "react";
 
-//TODO: ICONOS SVG
-import ProjectInkato from "../../assets/images/projects/inkato.svg";
-import ProjectModaMarket from "../../assets/images/projects/moda-market.svg";
-import ProjectCentroGZA from "../../assets/images/projects/centro-gza.svg";
-import Reacticon from "../../assets/images/frontend/react.svg";
-import Vite from "../../assets/images/frontend/vite.svg";
-import Tailwind from "../../assets/images/frontend/tailwind.svg";
-import Html from "../../assets/images/frontend/html5.svg";
-import Css from "../../assets/images/frontend/css3.svg";
-
 //TODO: COMPONENTES
-import { SkillsSvg } from "../../components/iu/SkillsSvg";
 import InkatoProject from "./components/left/InkatoProject";
+import ModaMarket from "./components/rigth/ModaMarket";
 
 const Projects = () => {
   const [expand, setExpand] = useState(false);
@@ -20,7 +11,7 @@ const Projects = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setExpand(true);
-    }, 400);
+    }, 300);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -64,13 +55,22 @@ const Projects = () => {
           </div>
         </div> */}
         <InkatoProject />
-        <div className="relative w-full h-[6px] ">
+        <div className="relative w-full h-[6px]">
           <hr
             className={`absolute top-0 h-full bg-[#A9725C] transition-all duration-1000 ${
               expand ? "left-0 w-full" : "left-1/2 w-0"
             }`}
           />
         </div>
+        <ModaMarket />
+        <div className="relative w-full h-[6px]">
+          <hr
+            className={`absolute top-0 h-full bg-[#A9725C] transition-all duration-1000 ${
+              expand ? "left-0 w-full" : "left-1/2 w-0"
+            }`}
+          />
+        </div>
+        <br />
       </nav>
     </>
   );
