@@ -5,36 +5,15 @@ const Home = () => {
   return (
     <>
       {/* //TODO: h-screen max-lg:h-auto */}
-      <nav className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 max-lg:gap-10 yeison mt-20 max-lg:mt-4">
+      <nav className="grid grid-cols-1 md:grid-cols-2 max-lg:gap-10 yeison md:mt-20 mt-4">
         <div className="m-auto">
           <h1 className="text-[#A9725C] font-bold text-6xl merriweather-bold">
             Hola, soy
           </h1>
-          <h1 className="text-[#A9725C] font-bold text-6xl merriweather-bold py-4">
+          <h1 className="text-[#A9725C] font-bold text-6xl merriweather-bold py-4 max-xl:py-0">
             Yeissen Macalupu
           </h1>
-          {/* <div className="flex gap-4 py-4 max-xl:flex-col">
-            <h1 className="yeissen text-[#A9725C] font-bold text-6xl merriweather-bold">
-              <span>Y</span>
-              <span>e</span>
-              <span>i</span>
-              <span>s</span>
-              <span>s</span>
-              <span>e</span>
-              <span>n</span>
-            </h1>
-            <h1 className="yeissen text-[#A9725C] font-bold text-6xl merriweather-bold ">
-              <span>M</span>
-              <span>a</span>
-              <span>c</span>
-              <span>a</span>
-              <span>l</span>
-              <span>u</span>
-              <span>p</span>
-              <span>u</span>
-            </h1>
-          </div> */}
-          <h1 className="text-4xl raleway font-bold">
+          <h1 className="text-4xl raleway font-bold max-xl:pt-2">
             Desarrollador FullStack
           </h1>
           <p className="py-4 raleway text-justify">
@@ -84,17 +63,17 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="m-auto ">
-          <div className="rounded-prueb bg-[#A9725C] w-[380px] h-[350px] max-lg:w-[380px] max-lg:h-[380px]">
+        <div className="m-auto">
+          <div className="rounded-prueb bg-[#A9725C] md:w-[380px] md:h-[350px] w-[360px] h-[360px]">
             <img
               src="https://assets-global.website-files.com/64c73d04a946980a4476537e/64d454ec3583c11cf926ec6f_Jumping.svg"
               alt=""
-              className="w-[350px] animate-marquee"
+              className="md:w-[350px] w-[330px] animate-marquee"
             />
           </div>
         </div>
       </nav>
-      <div className="my-10">
+      <div className="md:my-10 my-6">
         <HrSeparator />
       </div>
       <Experience />
