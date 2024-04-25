@@ -8,6 +8,7 @@ export default defineConfig({
     alias: {
       // "@assets": "/src/assets",
       // "@images": "/src/assets/images",
+      "@perfil": "/src/assets/images/perfil",
       "@frontend": "/src/assets/images/frontend",
       "@backend": "/src/assets/images/backend",
       "@db": "/src/assets/images/db",
