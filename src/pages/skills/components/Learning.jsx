@@ -11,7 +11,7 @@ const Learning = () => {
   return (
     // 1200
     <nav data-aos="fade-up" data-aos-duration="2300">
-      <h1 className="text-[#A9725C] font-bold text-6xl max-md:text-5xl merriweather-bold py-4 text-center">
+      <h1 className="text-[#A9725C] font-bold text-6xl max-md:text-5xl merriweather-bold py-4 max-md:pt-0 text-center">
         Aprendiendo
       </h1>
       <div className="mt-2 mx-auto flex flex-wrap items-center justify-center gap-6 max-w-screen-lg w-full">
