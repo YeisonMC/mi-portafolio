@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
@@ -36,4 +39,59 @@ Great Vibes: Una fuente display con un estilo retro. */
 
 .sub-titulos {
   font-family: "Open Sans", sans-serif;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+}
+
+/* .yeissen span {
+  display: inline-block;
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transform: translateY(10px);
+} */
+
+@keyframes entrada {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.yeison {
+  animation: entrada 1.4s ease;
+}
+
+.rounded-prueb {
+  border-radius: 27% 63% 27% 54% / 63% 63% 35% 35%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(5%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 5s linear infinite;
 }

@@ -1,8 +1,7 @@
 .menu_btn .line {
   width: 28px;
   height: 2px;
-  background-color: white;
-  /* background-color: black; */
+  background-color: black;
   transform-origin: left;
   transition: transform 0.4s ease, opacity 0.2s ease;
 }
@@ -22,14 +21,8 @@
 .icons {
   display: none;
   position: absolute;
-  /* right: 5%; */
   right: 5%;
 }
-
-/* 
-  #check {
-    display: none;
-  } */
 
 header::before {
   content: "";
@@ -47,35 +40,41 @@ header::before {
     display: inline-block;
   }
 
-  ul {
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s ease;
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
   }
 
-  #check:checked ~ ul {
-    height: auto;
-    /* height: 12em; */
-    /* height: 100vh; */
+  .menu-items.open {
+    display: flex;
   }
+}
 
-  /* ul li {
-    transform: translateX(-50px);
-    transition: 0.5s ease;
-  }
-  #check:checked ~ ul li {
-    transform: translateX(0);
-  } */
+/* TODO: NAVAR UL LI A */
+.animation-hover a {
+  position: relative;
+}
+.animation-hover a::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #a9725c;
+  transition: all 0.4s;
+}
 
-  ul {
-    transform: translateX(-50px);
-    transition: 0.5s ease;
-  }
-  #check:checked ~ ul {
-    transform: translateX(0);
-  }
+.animation-hover a.active::before {
+  width: 100%;
+}
 
-  /* ul li a {
-        display: block;
-      } */
+.animation-hover a.active:hover::before {
+  width: 100%;
 }

@@ -4,9 +4,7 @@ export const SkillsSvg = (props) => {
   return (
     // bg-slate-200
     <div
-      className="rounded-full flex justify-center items-center gap-x-2 py-2 px-4 bg-slate-200 hover:scale-110
-      hover:bg-[#F2C873]
-       dark:hover:bg-white/10 transition"
+      className="rounded-md flex justify-center items-center gap-x-1 py-1 px-2 bg-slate-100 text-sm my-2"
       {...props}
     ></div>
   );
