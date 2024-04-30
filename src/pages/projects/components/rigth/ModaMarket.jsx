@@ -28,7 +28,8 @@ const ModaMarket = () => {
             </h1>
             <div className="flex gap-3 items-center">
               <a
-                href="#"
+                href="https://github.com/YeisonMC/moda-market-frontend"
+                target="_blank"
                 className="hover:-translate-y-1 transition duration-300"
               >
                 <svg
@@ -44,7 +45,8 @@ const ModaMarket = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://moda-market-frontend-h3f1.vercel.app/"
+                target="_blank"
                 className="hover:-translate-y-1 transition duration-300"
               >
                 <svg

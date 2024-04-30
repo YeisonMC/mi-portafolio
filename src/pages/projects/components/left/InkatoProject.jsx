@@ -44,7 +44,8 @@ const InkatoProject = () => {
             </h1>
             <div className="flex gap-3 items-center">
               <a
-                href="#"
+                href="https://github.com/YeisonMC/web-architect"
+                target="_blank"
                 className="hover:-translate-y-1 transition duration-300"
               >
                 <svg
@@ -60,7 +61,8 @@ const InkatoProject = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://web-architect.vercel.app/"
+                target="_blank"
                 className="hover:-translate-y-1 transition duration-300"
               >
                 <svg

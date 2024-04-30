@@ -26,8 +26,14 @@ const Skills = () => {
   const [likesHtml, setLikesHtml] = useState(10);
   const [likesCss, setLikesCss] = useState(8);
   const [likesJs, setLikesJs] = useState(5);
+  const [likesNodeJS, setLikesNodeJS] = useState(14);
   const [likesReact, setLikesReact] = useState(13);
+  const [likesVite, setLikesVite] = useState(20);
   const [likesTailwind, setLikesTailwind] = useState(31);
+  const [likesBootstrap, setLikesBootstrap] = useState(40);
+  const [likesJava, setLikesJava] = useState(48);
+  const [likesSpring, setLikesSpring] = useState(28);
+  const [likesMySQL, setLikesMySQL] = useState(18);
   return (
     <>
       <nav
@@ -60,8 +66,8 @@ const Skills = () => {
           <TecnologiaCard
             nombre="NodeJS"
             imagen={Nodejs}
-            likes={likesJs}
-            setLikes={setLikesJs}
+            likes={likesNodeJS}
+            setLikes={setLikesNodeJS}
           />
           <TecnologiaCard
             nombre="React"
@@ -72,8 +78,8 @@ const Skills = () => {
           <TecnologiaCard
             nombre="Vite"
             imagen={Vite}
-            likes={likesReact}
-            setLikes={setLikesReact}
+            likes={likesVite}
+            setLikes={setLikesVite}
           />
           <TecnologiaCard
             nombre="Tailwind"
@@ -84,33 +90,33 @@ const Skills = () => {
           <TecnologiaCard
             nombre="Bootstrap"
             imagen={Bootstrap}
-            likes={likesTailwind}
-            setLikes={setLikesTailwind}
+            likes={likesBootstrap}
+            setLikes={setLikesBootstrap}
           />
           <TecnologiaCard
             nombre="Java"
             imagen={Java}
-            likes={likesTailwind}
-            setLikes={setLikesTailwind}
+            likes={likesJava}
+            setLikes={setLikesJava}
           />
           <TecnologiaCard
             nombre="Spring"
             imagen={Spring}
-            likes={likesTailwind}
-            setLikes={setLikesTailwind}
+            likes={likesSpring}
+            setLikes={setLikesSpring}
           />
           <TecnologiaCard
             nombre="MySQL"
             imagen={MySQL}
-            likes={likesTailwind}
-            setLikes={setLikesTailwind}
+            likes={likesMySQL}
+            setLikes={setLikesMySQL}
           />
         </div>
         <div className="md:my-10 my-6">
           <HrSeparator />
         </div>
       </nav>
-      <div className="mb-8">
+      <div className="mb-14 max-md:8">
         <Learning />
       </div>
     </>
