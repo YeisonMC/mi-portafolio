@@ -7,9 +7,10 @@ const TecnologiaCard = ({ nombre, imagen, likes, setLikes }) => {
     setLikes((prevLikes) => (isLiked ? prevLikes - 1 : prevLikes + 1));
     setIsLiked(!isLiked);
   };
+
   return (
     // w-[150px]
-    <div className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 rounded-lg w-[150px]">
+    <div className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 rounded-lg w-[150px] max-md:w-[170px]">
       <p className="text-center">{nombre}</p>
       <img src={imagen} alt={nombre} className="mt-1 w-20 mx-auto" />
       <div className="mt-1 flex justify-between items-center">

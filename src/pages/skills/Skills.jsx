@@ -6,12 +6,14 @@ import Css from "@frontend/css3.svg";
 // import javascript from "@frontend/javascript-rounded.svg";
 import Javascript from "@frontend/javascript.svg";
 import Reacticon from "@frontend/react.svg";
+import Vite from "@frontend/vite.svg";
 import Tailwind from "@frontend/tailwind.svg";
 import Bootstrap from "@frontend/bootstrap.svg";
 
 //? ICONOS SVG BACKEND
 import Spring from "@backend/spring.svg";
 import Java from "@backend/java.svg";
+import Nodejs from "@backend/nodejs.svg";
 
 //? ICONOS SVG BASE DE DATOS
 import MySQL from "@db/mysql.svg";
@@ -28,8 +30,12 @@ const Skills = () => {
   const [likesTailwind, setLikesTailwind] = useState(31);
   return (
     <>
-      <nav className="mt-8" data-aos="fade-up" data-aos-duration="2300">
-        <h1 className="text-[#A9725C] font-bold text-6xl merriweather-bold py-4 text-center">
+      <nav
+        className="mt-8 max-md:mt-2"
+        data-aos="fade-up"
+        data-aos-duration="2300"
+      >
+        <h1 className="text-[#A9725C] font-bold text-6xl max-md:text-5xl merriweather-bold py-4 text-center">
           Habilidades
         </h1>
         <div className="mt-2 mx-auto flex flex-wrap items-center justify-center gap-6 max-w-screen-lg w-full">
@@ -52,8 +58,20 @@ const Skills = () => {
             setLikes={setLikesJs}
           />
           <TecnologiaCard
+            nombre="NodeJS"
+            imagen={Nodejs}
+            likes={likesJs}
+            setLikes={setLikesJs}
+          />
+          <TecnologiaCard
             nombre="React"
             imagen={Reacticon}
+            likes={likesReact}
+            setLikes={setLikesReact}
+          />
+          <TecnologiaCard
+            nombre="Vite"
+            imagen={Vite}
             likes={likesReact}
             setLikes={setLikesReact}
           />
@@ -92,7 +110,9 @@ const Skills = () => {
           <HrSeparator />
         </div>
       </nav>
-      <Learning />
+      <div className="mb-8">
+        <Learning />
+      </div>
     </>
   );
 };

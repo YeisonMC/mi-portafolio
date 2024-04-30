@@ -18,8 +18,12 @@ const Projects = () => {
 
   return (
     <>
-      <nav className="mt-8" data-aos="fade-up" data-aos-duration="2300">
-        <h1 className="text-[#A9725C] font-bold text-6xl merriweather-bold py-4 text-center">
+      <nav
+        className="mt-8 max-md:mt-2"
+        data-aos="fade-up"
+        data-aos-duration="2300"
+      >
+        <h1 className="text-[#A9725C] font-bold text-6xl max-md:text-5xl merriweather-bold py-4 text-center">
           Proyectos
         </h1>
         {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6">
