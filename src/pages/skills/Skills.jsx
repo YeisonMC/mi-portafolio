@@ -8,7 +8,9 @@ import Javascript from "@frontend/javascript.svg";
 import Reacticon from "@frontend/react.svg";
 import Vite from "@frontend/vite.svg";
 import Tailwind from "@frontend/tailwind.svg";
-import Bootstrap from "@frontend/bootstrap.svg";
+// import Figma from "@frontend/figma.svg";
+import GitHub from "@frontend/github.svg";
+// import Bootstrap from "@frontend/bootstrap.svg";
 
 //? ICONOS SVG BACKEND
 import Spring from "@backend/spring.svg";
@@ -30,7 +32,9 @@ const Skills = () => {
   const [likesReact, setLikesReact] = useState(13);
   const [likesVite, setLikesVite] = useState(20);
   const [likesTailwind, setLikesTailwind] = useState(31);
-  const [likesBootstrap, setLikesBootstrap] = useState(40);
+  const [likesGitHub, setGitHub] = useState(41);
+  // const [likesFigma, setFigma] = useState(25);
+  // const [likesBootstrap, setLikesBootstrap] = useState(40);
   const [likesJava, setLikesJava] = useState(48);
   const [likesSpring, setLikesSpring] = useState(28);
   const [likesMySQL, setLikesMySQL] = useState(18);
@@ -64,6 +68,12 @@ const Skills = () => {
             setLikes={setLikesJs}
           />
           <TecnologiaCard
+            nombre="GitHub"
+            imagen={GitHub}
+            likes={likesGitHub}
+            setLikes={setGitHub}
+          />
+          <TecnologiaCard
             nombre="NodeJS"
             imagen={Nodejs}
             likes={likesNodeJS}
@@ -87,12 +97,12 @@ const Skills = () => {
             likes={likesTailwind}
             setLikes={setLikesTailwind}
           />
-          <TecnologiaCard
+          {/* <TecnologiaCard
             nombre="Bootstrap"
             imagen={Bootstrap}
             likes={likesBootstrap}
             setLikes={setLikesBootstrap}
-          />
+          /> */}
           <TecnologiaCard
             nombre="Java"
             imagen={Java}
@@ -111,6 +121,12 @@ const Skills = () => {
             likes={likesMySQL}
             setLikes={setLikesMySQL}
           />
+          {/* <TecnologiaCard
+            nombre="Figma"
+            imagen={Figma}
+            likes={likesFigma}
+            setLikes={setFigma}
+          /> */}
         </div>
         <div className="md:my-10 my-6">
           <HrSeparator />

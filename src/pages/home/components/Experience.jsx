@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <>
       <div className=" mb-8">
-        <h1 className="yeison text-[#A9725C] font-bold text-6xl merriweather-bold text-center">
+        <h1 className="yeison text-[#A9725C] font-bold text-6xl merriweather-bold text-center max-md:text-5xl">
           Mi Experiencia
         </h1>
         <div className="mt-4">

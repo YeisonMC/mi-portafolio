@@ -4,6 +4,7 @@ import React from "react";
 import Angular from "@frontend/angular.svg";
 import TypeScript from "@frontend/typescript.svg";
 import NextJS from "@frontend/nextjs.svg";
+import Figma from "@frontend/figma.svg";
 
 import TecnologiaNotLoveCard from "./TecnologiaNotLoveCard";
 
@@ -18,6 +19,7 @@ const Learning = () => {
         <TecnologiaNotLoveCard nombre="Angular" imagen={Angular} />
         <TecnologiaNotLoveCard nombre="TypeScript" imagen={TypeScript} />
         <TecnologiaNotLoveCard nombre="NextJS" imagen={NextJS} />
+        <TecnologiaNotLoveCard nombre="Figma" imagen={Figma} />
       </div>
     </nav>
   );
