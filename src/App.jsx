@@ -16,6 +16,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./assets/styles/TipoGrafias.css";
 import Footer from "./components/Footer/Footer";
+import NotFound from "./pages/error/NotFound";
 
 const App = () => {
   React.useEffect(() => {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </section>
       <Footer />
