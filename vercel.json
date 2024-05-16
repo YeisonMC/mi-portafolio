@@ -6,6 +6,7 @@
     },
     { "src": "/projects", "dest": "/" },
     { "src": "/skills", "dest": "/" },
-    { "src": "/about", "dest": "/" }
+    { "src": "/about", "dest": "/" },
+    { "src": "*", "dest": "/" }
   ]
 }
