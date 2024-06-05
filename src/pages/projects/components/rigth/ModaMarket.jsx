@@ -105,7 +105,12 @@ const ModaMarket = () => {
             mejorar la experiencia del usuario.
           </p>
         </div>
-        <div className="group relative max-xl:my-auto shadow-md">
+        <img
+          src={ModaMarketProject}
+          alt="ModaMarket - Yeissen Beckam"
+          className="rounded-md"
+        />
+        {/* <div className="group relative max-xl:my-auto shadow-md">
           <img
             src={ModaMarketProject}
             alt="ModaMarket - Yeissen Beckam"
@@ -125,7 +130,7 @@ const ModaMarket = () => {
               />
             </svg>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

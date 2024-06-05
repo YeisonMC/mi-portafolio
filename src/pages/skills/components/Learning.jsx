@@ -5,6 +5,7 @@ import Angular from "@frontend/angular.svg";
 import TypeScript from "@frontend/typescript.svg";
 import NextJS from "@frontend/nextjs.svg";
 import Figma from "@frontend/figma.svg";
+import WordPress from "@frontend/wordpress.svg";
 
 import TecnologiaNotLoveCard from "./TecnologiaNotLoveCard";
 
@@ -20,6 +21,7 @@ const Learning = () => {
         <TecnologiaNotLoveCard nombre="TypeScript" imagen={TypeScript} />
         <TecnologiaNotLoveCard nombre="NextJS" imagen={NextJS} />
         <TecnologiaNotLoveCard nombre="Figma" imagen={Figma} />
+        <TecnologiaNotLoveCard nombre="WordPress" imagen={WordPress} />
       </div>
     </nav>
   );

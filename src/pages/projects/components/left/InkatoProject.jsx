@@ -16,7 +16,7 @@ const InkatoProject = () => {
   return (
     <div className="my-6">
       <div className="grid grid-cols-2 gap-6 max-lg:grid-cols-1 max-lg:gap-0">
-        <div className="group relative max-xl:my-auto shadow-md">
+        {/* <div className="group relative max-xl:my-auto shadow-md">
           <img
             src={ProjectInkato}
             alt="ProjectInkato - Yeissen Beckam"
@@ -36,7 +36,12 @@ const InkatoProject = () => {
               />
             </svg>
           </div>
-        </div>
+        </div> */}
+        <img
+          src={ProjectInkato}
+          alt="ProjectInkato - Yeissen Beckam"
+          className="rounded-md "
+        />
         <div className="px-6 text-justify max-lg:py-4 max-lg:px-3 max-xl:my-auto">
           <div className="flex justify-between items-center max-sm:flex-col">
             <h1 className="text-3xl raleway font-semibold">
