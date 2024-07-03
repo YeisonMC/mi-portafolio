@@ -36,8 +36,8 @@ const Home = () => {
             seguir este mundo tan maravilloso.
           </p> */}
           <div className="flex gap-4 mt-2">
+            {/* href="/CV%20-%20YEISSEN%20-%20DESARROLLADOR.pdf" */}
             <a
-              href="/CV%20-%20YEISSEN%20-%20DESARROLLADOR.pdf"
               target="_blank"
               className="raleway font-semibold border-2 border-[#A9725C] text-[#A9725C] py-2 px-4 rounded-lg hover:scale-105 transition duration-500"
             >
