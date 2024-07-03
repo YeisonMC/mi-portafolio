@@ -20,10 +20,22 @@ export const Home = () => {
             <h3 className="titulos text-white text-3xl md:text-4xl lg:text-5xl font-bold">
               Yeissen Macalupu Marchan
             </h3>
-            <p className="sub-titulos text-white text-xl lg:text-2xl text-balance mt-6">
+            {/* <p className="sub-titulos text-white text-xl lg:text-2xl text-balance mt-6">
               Soy egresado de la carrera de{" "}
               <em className="text-[#FDCA65]">
                 Diseño y Desarrollo de Software
+              </em>
+              , con experiencia en diversas tecnologías. Mi enfoque principal
+              está en el desarrollo tanto de frontend como de backend, así como
+              en el diseño y manejo de bases de datos relacionales. Tengo
+              experiencia en el desarrollo de aplicaciones móviles en Android
+              utilizando Flutter. Explora mi portafolio para descubrir mis
+              proyectos destacados
+            </p> */}
+            <p className="sub-titulos text-white text-xl lg:text-2xl text-balance mt-6">
+              Soy un joven autodidacta, centrado el tema de
+              <em className="text-[#FDCA65]">
+                Tecnologia de la información (TI)
               </em>
               , con experiencia en diversas tecnologías. Mi enfoque principal
               está en el desarrollo tanto de frontend como de backend, así como

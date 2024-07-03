@@ -17,6 +17,15 @@ const Home = () => {
             Desarrollador FullStack
           </h1>
           <p className="py-4 raleway text-justify">
+            Soy un joven autodidacta, centrado el tema de Tecnologia de la
+            información (TI), durante todo mi aprendizaje he visto base de
+            datos, desarrollo web y backend, aplicaciones moviles con flutter y
+            arquitectura de proyecto, desarrolle interes principalmente con el
+            lado Frontend y Backend, siendo mis herramientas favoritas React,
+            Nodejs, Tailwind y MySQL, como desarrollador siempre estoy en
+            constante aprendizaje y me alegra seguir este mundo tan maravilloso.
+          </p>
+          {/* <p className="py-4 raleway text-justify">
             Soy egresado de la carrera de Diseño y Desarollo de Software en
             Certus 2024, durante todo mi aprendizaje he visto base de datos,
             desarrollo web y backend, aplicaciones moviles con flutter y
@@ -25,7 +34,7 @@ const Home = () => {
             herramientas favoritas React, Nodejs, Tailwind y MySQL, como
             desarrollador siempre estoy en constante aprendizaje y me alegra
             seguir este mundo tan maravilloso.
-          </p>
+          </p> */}
           <div className="flex gap-4 mt-2">
             <a
               href="/CV%20-%20YEISSEN%20-%20DESARROLLADOR.pdf"
