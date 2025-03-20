@@ -19,42 +19,25 @@ const About = () => {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 my-4 gap-10">
           <div className="px-4 m-auto max-md:px-0">
-            {/* <p className="raleway text-justify">
-              !Hola! a todos, Soy Yeissen pero mis amigos me dice Yeison, soy de
-              Perú y tengo 20 años, mi camino a esta hermosa carrera empezo hace
-              3 años, donde aún esta pensando donde estudiar, por mi estado
-              economico opte por ir a un Instituto donde fueron mis primeros
-              pasos.
-            </p>
-            <p className="my-4 raleway text-justify">
-              Mi experiencia en el Instituto no fue muy buena, sientia que la
-              calidad de educación era demasiado baja por lo que pagaba pero
-              decide terminar la carrera, por otro lado estando en 5to ciclo
-              empece a buscar mis primeras practicas, además que me meti a
-              muchas comunidades, a programas como ONE que me fueron de gran
-              ayuda
-            </p> */}
-            <p className="raleway text-justify">
-              !Hola! a todos, Soy Yeissen pero mis amigos me dice Yeison, soy de
-              Perú y tengo 20 años, mi camino a esta hermosa carrera empezo hace
-              3 años, donde aún esta pensando donde estudiar, por mi estado
-              economico opte por ir a un Instituto donde fueron mis primeros
-              pasos.
-            </p>
-            <p className="my-4 raleway text-justify">
-              Mi experiencia en el Instituto no fue muy buena, sentía que la
-              calidad de educación era demasiado baja por lo que pagaba pero por
-              temas económicos deje la carrera por lo cual me dedique a ser
-              autodidacta y empece a buscar mis primeras prácticas para sumar a
-              mi perfil, además que me metí a muchas comunidades, a programas
-              como ONE que me fueron de gran ayuda
-            </p>
-            <p className="raleway text-justify">
-              Actualmente sigo alimentandome de aprendizaje, viendo cursos,
-              haciendo nuevos proyectos y como dato curioso quiero sabir a
-              Youtube algunos cursos o guias para hacerme conocer, me gusta
-              ayudar a los demás y orientarlos.
-            </p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quo
+            fuga recusandae optio qui neque expedita, consectetur, voluptates
+            tenetur, quisquam vel doloremque dignissimos quas voluptatum.
+            Excepturi quo necessitatibus labore voluptatibus! Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Soluta quo fuga recusandae
+            optio qui neque expedita, consectetur, voluptates tenetur, quisquam
+            vel doloremque dignissimos quas voluptatum. Excepturi quo
+            necessitatibus labore voluptatibus! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Soluta quo fuga recusandae optio qui
+            neque expedita, consectetur, voluptates tenetur, quisquam vel
+            doloremque dignissimos quas voluptatum. Excepturi quo necessitatibus
+            labore voluptatibus! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Soluta quo fuga recusandae optio qui neque
+            expedita, consectetur, voluptates tenetur, quisquam vel doloremque
+            dignissimos quas voluptatum. Excepturi quo necessitatibus labore
+            voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Soluta quo fuga recusandae optio qui neque expedita,
+            consectetur, voluptates tenetur, quisquam vel doloremque dignissimos
+            quas voluptatum. Excepturi quo necessitatibus labore voluptatibus!
           </div>
           <div className="m-auto">
             {/* <img

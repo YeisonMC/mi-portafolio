@@ -17,28 +17,22 @@ const Home = () => {
             Desarrollador FullStack
           </h1>
           <p className="py-4 raleway text-justify">
-            Soy un joven autodidacta, centrado el tema de Tecnologia de la
-            información (TI), durante todo mi aprendizaje he visto base de
-            datos, desarrollo web y backend, aplicaciones moviles con flutter y
-            arquitectura de proyecto, desarrolle interes principalmente con el
-            lado Frontend y Backend, siendo mis herramientas favoritas React,
-            Nodejs, Tailwind y MySQL, como desarrollador siempre estoy en
-            constante aprendizaje y me alegra seguir este mundo tan maravilloso.
+            Técnico Superior en "Diseño y Desarrollo de Software" en CERTUS, con
+            2 años de experiencia en el mercado TI. Enfocado tanto en el
+            desarrollo Frontend como Backend, lo que me permite desempeñarme
+            como FullStack. Actualmente, curso la carrera de "Ciencias de la
+            Computación" en la Universidad de Ciencias Aplicadas (UPC). Me
+            considero una persona autodidacta que busca estar aprendiendo
+            constantemente. Busco nuevas oportunidades en el mercado TI que me
+            permitan no solo aportar mi conocimiento y habilidades, sino también
+            crecer profesional y personalmente.
           </p>
-          {/* <p className="py-4 raleway text-justify">
-            Soy egresado de la carrera de Diseño y Desarollo de Software en
-            Certus 2024, durante todo mi aprendizaje he visto base de datos,
-            desarrollo web y backend, aplicaciones moviles con flutter y
-            arquitectura de proyecto, durante todo mi aprendizaje desarrolle
-            interes principalmente con el lado Frontend y Backend, siendo mis
-            herramientas favoritas React, Nodejs, Tailwind y MySQL, como
-            desarrollador siempre estoy en constante aprendizaje y me alegra
-            seguir este mundo tan maravilloso.
-          </p> */}
+
           <div className="flex gap-4 mt-2">
             {/* href="/CV%20-%20YEISSEN%20-%20DESARROLLADOR.pdf" */}
             <a
               target="_blank"
+              href="CV - YEISSEN MACALUPU - DESARROLLADOR.pdf"
               className="raleway font-semibold border-2 border-[#A9725C] text-[#A9725C] py-2 px-4 rounded-lg hover:scale-105 transition duration-500"
             >
               <div className="flex gap-1 items-center">
