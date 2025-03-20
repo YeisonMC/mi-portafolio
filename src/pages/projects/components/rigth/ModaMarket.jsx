@@ -21,7 +21,12 @@ import { SkillsSvg } from "../../../../components/iu/SkillsSvg";
 const ModaMarket = () => {
   return (
     <div className="my-6">
-      <div className="grid grid-cols-2 gap-6 max-lg:gap-0 max-lg:flex max-lg:flex-col-reverse">
+      <div className="grid grid-cols-2 gap-6 max-lg:gap-0 max-lg:flex max-lg:flex-col">
+        <img
+          src={ModaMarketProjectNow}
+          alt="ModaMarket - Yeissen Beckam"
+          className="rounded-md"
+        />
         <div className="px-8 text-justify max-lg:py-4 max-lg:px-3 max-xl:my-auto my-auto">
           <div className="flex justify-between items-center max-xl:flex-col">
             <h1 className="text-3xl raleway font-semibold text-center">
@@ -106,11 +111,6 @@ const ModaMarket = () => {
             mejorar la experiencia del usuario.
           </p>
         </div>
-        <img
-          src={ModaMarketProjectNow}
-          alt="ModaMarket - Yeissen Beckam"
-          className="rounded-md"
-        />
       </div>
     </div>
   );
