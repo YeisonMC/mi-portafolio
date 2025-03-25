@@ -18,7 +18,7 @@ const Home = () => {
           </h1>
           <p className="py-4 raleway text-justify">
             Técnico Superior en "Diseño y Desarrollo de Software" en CERTUS, con
-            2 años de experiencia en el mercado TI. Enfocado tanto en el
+            1 años de experiencia en el mercado TI. Enfocado tanto en el
             desarrollo Frontend como Backend, lo que me permite desempeñarme
             como FullStack. Actualmente, curso la carrera de "Ciencias de la
             Computación" en la Universidad de Ciencias Aplicadas (UPC). Me
